@@ -9,28 +9,56 @@
 
 /* Palette color */
 :root{
-    --orange: #FF6900;
+    --black: #1A1A1A;
     --white: #FFFFFF;
+    --yellow: #FFFF00;
     --red: #FF0000;
     --green:  #008000;
-    --black: #1A1A1A;
+}
+
+/* Generics */
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 
 /* Utilities */
 .container{
-    width: 1000px;
+    width: 600px;
     margin: 0 auto;
 }
 
 .d-flex{display: flex;}
 
-.w-50 {width: 50%;}
 .w-100 {width: 100%;}
 
-.h-100 {height: 100%;}
 .vh-100 {height: 100vh;}
 
 
+/* Main */
+section .product {
+    text-align: center;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-/* Generics */
+#red-shoes, #green-shoes, #yellow-shoes {position: relative;}
+
+#red-shoes {
+    background-color: var(--red);
+    color: var(--yellow);
+}
+
+#green-shoes {
+    background-color: var(--green);
+    color: var(--yellow);
+}
+
+#yellow-shoes {
+    background-color: var(--yellow);
+    color: var(--green);
+}
